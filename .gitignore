@@ -1,0 +1,10 @@
+*.class
+.settings
+.preferences
+.classpath
+.project
+target
+.idea
+*.iml
+
+*.received.*
