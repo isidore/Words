@@ -31,8 +31,9 @@ public class SampleTests
         return w -> w.charAt(position-1) != letter && w.contains("" + letter);
     }
     private Queryable<String> wordle(String excludingLetters) {
+        var exclude = Queryable.as(excludingLetters.split(""));
         return Words.get()
                 .where(w -> w.length() == 5)
-                .where(w -> Queryable.as(excludingLetters.split("")).all(l -> !w.contains(l)));
+                .where(w -> exclude.all(l -> !w.contains(l)));
     }
 }
