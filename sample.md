@@ -1,7 +1,9 @@
-```mermaid
- %%{init: {   "theme": "default",
-  "securityLevel": "loose" }%%
 
+```mermaid
+ 
   graph TD
-  t("<img src='https://iconscout.com/ms-icon-310x310.png'; width='30' />")
+  id1[StarterProject.Java.Maven<BR><B>StatusBadgeImageHere</B>] -->   Java;
+  StarterProject.Java.Gradle--> id2[or<br><b>StatusBadgeImageHere</b>] --> Java;
+  Java --> id3[<b>StatusBadgeImageHere<b>]
+  
 ```
